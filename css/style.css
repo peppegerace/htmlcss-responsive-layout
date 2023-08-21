@@ -81,3 +81,25 @@ section {
 .card-bottom {
   height: 50%;
 }
+
+/* TESTIMONIALS */
+.image,
+.text {
+  border: 1px solid black;
+  height: 50%;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.text {
+  text-align: center;
+}
