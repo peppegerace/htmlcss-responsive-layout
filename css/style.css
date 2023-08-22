@@ -1,3 +1,13 @@
+/* Custom properties */
+:root {
+  --blue: #0084fd;
+  --lightblue: #b5ddff;
+  --violet: #9792e4;
+  --yellow: #fabf61;
+  --darkgrey: #333333;
+}
+
+/* General properties */
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +45,8 @@ header .row {
 header .row .menu {
   display: none;
 }
+
+
 
 /* MAIN */
 .intro .row {
