@@ -4,102 +4,103 @@
   box-sizing: border-box;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
+body {
+  font-family: 'PT Sans', sans-serif;
 }
 
 .debug {
-  background-color: red;
-  height: 20px;
-  width: 20px;
+  background-color: rgba(0, 0, 255, .2);
+  border: 1px solid black;
+  min-height: 50px;
 }
 
 .container {
-  width: 90%;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-/* HEADER */
-header {
-  padding: 10px 10px;
-  align-items: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  background-color: #0084fd;
-  color: white;
-}
-
-/* MAIN */
-main {
-  padding-top: 60px;
-}
-
-section {
-  border: 1px solid black;
-  margin-bottom: 30px;
+.row {
+  display: flex;
 }
 
 .col {
-  background-color: rgba(255, 0, 0, 0.5);
-  border: 1px solid black;
-  padding: 10px;
   width: 100%;
-  height: 200px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
+/* HEADER */
+header .row {
+  justify-content: space-between;
 }
 
-.card-top,
-.card-bottom {
-  height: 50%;
+header .row .menu {
+  display: none;
 }
 
-/* TESTIMONIALS */
-.image,
-.text {
-  border: 1px solid black;
-  height: 50%;
+/* MAIN */
+.intro .row {
+  flex-wrap: wrap;
 }
 
-.circle {
-  width: 80px;
-  height: 80px;
-  background-color: black;
-  border-radius: 50%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
+.intro .col:first-child .row,
+.planning .row,
+.testimonials .row,
+.benefits .row,
+.about .row {
+  flex-direction: column;
 }
 
-.text {
-  text-align: center;
+.benefits .row {
+  flex-wrap: wrap;
+}
+
+
+/* RESPONSIVE AREA */
+
+
+@media screen and (min-width:768px) {
+
+  header .row .menu {
+      display: block;
+  }
+
+  header .row .hamburger {
+      display: none;
+  }
+
+  .intro .col {
+      width: calc(100% / 3);
+  }
+  
+  .intro .col:first-child {
+      width: 66.6666%;
+  }
+
+  .planning .row,
+  .benefits .row,
+  .about .row,
+  .testimonials .row {
+      flex-direction: row;
+  }
+
+  .testimonials .row .col:first-child {
+      width: 220px;
+  }
+
+  .benefits .col {
+      width: 50%;
+  }
+
+  .about .col:last-child {
+      width: 250px;
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .intro .col:first-child .row {
+      flex-direction: row;
+  }
+  .benefits .col {
+      width: calc(100% / 3);
+  }
 }
