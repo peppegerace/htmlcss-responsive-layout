@@ -26,6 +26,7 @@ body {
 
 .container {
   max-width: 1140px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -33,22 +34,61 @@ body {
   display: flex;
 }
 
-.col {
+main .col {
   width: 100%;
 }
 
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
 /* HEADER */
+header {
+  width: 100%;
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 999;
+}
+
 header .row {
   justify-content: space-between;
+  align-items: center;
+  
 }
 
 header .row .menu {
   display: none;
 }
 
+header .menu ul {
+  display: flex;
+  flex-direction: row;
+}
 
+header .menu ul li {
+  margin: 0 10px;
+}
+
+header .menu button {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: white;
+}
 
 /* MAIN */
+main {
+  padding-top: 100px;
+}
+
 .intro .row {
   flex-wrap: wrap;
 }
