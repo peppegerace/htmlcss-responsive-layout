@@ -56,12 +56,6 @@ button {
   border-radius: 20px;
 }
 
-/* img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
 /* HEADER */
 header {
   width: 100%;
@@ -244,6 +238,7 @@ section {
 /* BENEFITS */
 .benefits {
   background-color: var(--violet);
+  padding-bottom: 40px;
 }
 
 .benefits .top h2 {
@@ -265,6 +260,10 @@ section {
   margin-bottom: 20px;
 }
 
+.benefits p {
+  color:  #7b7b7b;
+}
+
 .benefits .col h2,
 .benefits .col h3 {
   color: var(--violet);
@@ -274,6 +273,104 @@ section {
   background-color: var(--violet);
   color: white;
   padding: 8px 40px;
+}
+
+/* ABOUT US */
+.about .col h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--violet);
+}
+
+.about .col h2,
+.about .col p {
+  margin-bottom: 20px;
+}
+
+.about .col .image-description p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--violet);
+}
+
+.about .col .image-top {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about .col .image-top img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about .col .image-top .fa-quote-left {
+  font-size: 4rem;
+  position: absolute;
+  top:0;
+  left: 135px;
+  color: var(--violet);
+}
+
+.about .col:first-child p {
+  font-size: 1.5rem;
+}
+
+/* GET STARTED */
+.getstarted {
+  background-color: var(--violet);
+  color: white;
+  margin: 0;
+}
+
+.container-small {
+  max-width: 440px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.getstarted .container-small h3,
+.getstarted .container-small h4 {
+  margin-bottom: 20px;
+}
+
+.getstarted .container-small h3 {
+  color: var(--yellow);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.getstarted .container-small h4 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.getstarted .container-small button {
+  margin: 20px;
+  padding: 20px 80px;
+  background-color: white;
+  color: var(--violet);
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--darkgrey);
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer p {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+footer a {
+  color: var(--violet);
 }
 
 /* RESPONSIVE AREA */
@@ -347,7 +444,7 @@ section {
   .benefits .col:nth-child(5) {
     margin-left: 20px;
     margin-right: 20px;
-}
+  }
 
   .planning .row {
     flex-direction: row;
