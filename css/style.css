@@ -190,8 +190,58 @@ section {
   margin: 20px;
   cursor: pointer;
 }
-/* RESPONSIVE AREA */
 
+/* TESTIMONIALS */
+.testimonials .top {
+  text-align: center;
+  font-weight: 400;
+}
+
+
+.testimonials .top h2 {
+  color: var(--violet);
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.testimonials .top p {
+  margin-bottom: 30px;
+}
+
+.testimonials .cards {
+  color: white;
+  font-size: 1rem;
+}
+
+.testimonials img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-content: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
+.testimonials .cards .card .row .col {
+  margin-bottom: 0;
+}
+
+.testimonials .cards .card {
+  margin-bottom: 20px;
+  background-color: var(--violet);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.testimonials .col-text h4 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* RESPONSIVE AREA */
 
 @media screen and (min-width:768px) {
 
@@ -227,6 +277,19 @@ section {
       width: 220px;
   }
 
+  .testimonials img {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .testimonials .col-text {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .benefits .col {
       width: 50%;
   }
@@ -250,7 +313,7 @@ section {
   .planning .col:last-child {
     scale: 0.7;
     position: relative;
-    bottom: -70px;
+    bottom: -75px;
     border-radius: 50px;
   }
 }
